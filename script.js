@@ -1,1 +1,0 @@
-const siblings=document.querySelectorAll('.nav__item');

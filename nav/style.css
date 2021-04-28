@@ -34,5 +34,12 @@
 .nav__item {
   padding: 10px;
   background-color: teal;
+  list-style-type: none;
+}
+
+.faded {
+  -webkit-transition: opacity ease-in-out .2s;
+  transition: opacity ease-in-out .2s;
+  opacity: .5;
 }
 /*# sourceMappingURL=style.css.map */
