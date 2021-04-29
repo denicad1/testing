@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.text{
+    font-size: 2rem;
+    display: inline-block;
+
+}
+.section{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.562);
+    &1{
+        height: 110vh;
+        
+    }
+    &2{
+        height: 100vh;
+        background-color: rgba(255, 255, 0, 0.541);
+    }
+    &3{
+        height:50vh;
+    }
+    
+}
+.hidden{
+    transform: translateY(8rem);
+}
