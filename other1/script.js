@@ -1,13 +1,16 @@
 const sections=document.querySelectorAll('.section');
 const sect = function(entries,observer) {
     const [entry]=entries;
-    entry.classList.remove('hidden');
+    console.log(entry);
+    if(!entry.isIntersecting)return;
+    entry.target.classList.remove('hidden');
+    observer.unobserve(entry.target);
 }
 const sectObserver=new IntersectionObserver(sect,{
     root:null,
     threshold:0,
-    thresholdMargin:'200px',
+    
 });
-sections.array.forEach(element => {
+sections.forEach(element => {
     sectObserver.observe(element);
 });

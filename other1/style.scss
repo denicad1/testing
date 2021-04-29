@@ -4,6 +4,9 @@
     padding: 0;
 
 }
+body{
+    background-color: rgba(0, 0, 255, 0.562);
+}
 .text{
     font-size: 2rem;
     display: inline-block;
@@ -12,14 +15,17 @@
 .section{
     width: 100%;
     text-align: center;
-    background-color: rgba(0, 0, 255, 0.562);
+    
+    transition: transform 1s, opacity 1s;
     &1{
         height: 110vh;
+        background-attachment: fixed;
+        background-image:linear-gradient(rgba(0, 128, 0, .5),rgba(0,128,0,.5)),url("pics/download.jpg") ;
         
     }
     &2{
         height: 100vh;
-        background-color: rgba(255, 255, 0, 0.541);
+        background-color: rgba(255, 255, 0, 0.178);
     }
     &3{
         height:50vh;
@@ -27,5 +33,13 @@
     
 }
 .hidden{
+    opacity: 0;
     transform: translateY(8rem);
+  
+    
+}
+.hero{
+    display: block;
+    text-align: center;
+    height: 110vh;
 }
